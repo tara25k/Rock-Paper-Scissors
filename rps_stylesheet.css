@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+body{
+    font-family: 'Roboto Mono', monospace;
+}
+
+#title{
+    color:#A52A2A;
+    text-decoration:underline;
+    text-decoration-color:black;
+    text-decoration-thickness: 2px;
+}
+
+
+
+.round{
+    display:inline;
+    text-align:center;
+}
+
+.selection{
+    height:300px;
+    padding:10px;
+    display:inline-block;
+    margin:20px;
+    position: relative;
+    visibility:visible;
+    z-index: 0;
+    
+}
+
+.image.fadeOut{
+    animation-name: fadeOut;
+    animation-duration:1s;
+    animation-fill-mode: forwards;
+}
+
+.image.show{
+    opacity:1;
+}
+
+@keyframes fadeOut{
+    from {opacity:1;}
+    to {opacity:0;}
+}
+
+.onTop.fadeIn{
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn{
+    from{opacity:0;}
+    to{opacity:1;}
+}
+
+
+img{
+    height:45%;
+    border:5px solid black;
+    border-radius:5px;
+    padding:10px;
+    background-color:#DA6C65;
+}
+
+.selectionButtons{
+    margin-left:28%;
+}
+
+img:hover{
+    background-color: #B65B55;
+    cursor:pointer;
+}
+
+
+.onTop{
+    position:absolute;
+    height:100%;
+    top:10px;
+    left:120px;
+    z-index:-1;
+    opacity:0;
+}
+
+.ontop.hide{
+    opacity:0;
+}
+
+
+
+.resultsButtons{
+    margin-left:35%
+}
+
+#decisionText{
+    text-align:center;
+    font-weight:bold;
+    font-size:20px;
+    margin-bottom: 100px;
+}
+
+#playAgain{
+    height:50px;
+    width:150px;
+    margin-left:24%;
+    border:0.1em solid #DA6C65;
+    border-radius:0.12em;
+    text-decoration:none;
+    font-size:20px;
+    font-weight:bold;
+    background-color: white;
+    color: #DA6C65;
+    text-align:center;
+    opacity:0;
+}
+
+#playAgain:hover{
+    background-color: rgb(224, 224, 224);
+    cursor:pointer;
+}
+
+#playAgain.show{
+    opacity:1;
+}
+
+
+#reset{
+    height:25px;
+    width:75px;
+    margin-left:24%;
+    border:0.1em solid #DA6C65;
+    border-radius:0.12em;
+    text-decoration:none;
+    font-size:15px;
+    font-weight:bold;
+    background-color: white;
+    color: #DA6C65;
+    display:inline;
+    text-align:center;
+    float:right;
+}
+#reset:hover{
+    background-color: rgb(224, 224, 224);
+    cursor:pointer;
+}
+.titleSequence{
+    display:inline;
+}

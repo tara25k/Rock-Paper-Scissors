@@ -1,0 +1,47 @@
+<DOCTYPE html>
+    <html>
+        <head>
+            <link rel="stylesheet" href="rps_stylesheet.css">
+        </head>
+        <script src="rps_script.js"></script>
+        <body>
+            <div class="titleSequence">
+            <h3 id="title">Rock, Paper, Scissors</h3>
+            <button id="reset" onclick="reset()">Reset</button>
+        </div>
+        
+            <p id="playerScore">Your Score:</p>
+            <p id="computerScore">Computer Score:</p>
+            <div class="round"><h1 id="round">Round 1</h1><h1 id="decisionText"></h1></div>
+            
+            <div class="selectionButtons">
+                <button id="playAgain" onclick="playAgain()">Play Again</button>
+                <br>
+               <div class="selection" id="rock" onclick="selectImage(this.id)">
+                    <img class="image"src="rock.png" >
+                    <div class="onTop">
+                        <img id="userImage" src="#">
+                    </div>
+                </div>
+
+                <div class="selection" id="paper" onclick="selectImage(this.id)">
+                    <img class="image" src="paper.png">
+                    <div class="onTop">
+                        <img id="computerImage" src="#">
+                    </div>
+                </div>
+
+                <div class="selection" id="scissors" onclick="selectImage(this.id)">
+                    <img class="image" src="scissors.png">
+                </div>
+                
+            </div>
+            
+
+
+
+
+
+        </body>
+    </html>
+</DOCTYPE>
